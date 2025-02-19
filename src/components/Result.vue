@@ -31,16 +31,16 @@ const returnHome = () => {
     <div class="result-card">
       <h2 class="result-title" :class="{ 'success': isPassed, 'failure': !isPassed }">
         <template v-if="percentage >= 80">
-          🏆 Excellent ! 🏆
+          🏆 Excellent !
         </template>
         <template v-else-if="percentage >= 60">
-          🎉 Bien joué ! 🎉
+          🎉 Bien joué !
         </template>
         <template v-else-if="percentage >= 40">
-          🎯 Pas mal ! 🎯
+          🎯 Pas mal !
         </template>
         <template v-else>
-          📚 À revoir ! 📚
+          📚 À revoir !
         </template>
       </h2>
       
